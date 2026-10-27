@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GB Autos | Premium Car Dealership</title>
+  <meta name="description" content="Explore quality vehicles at GB Autos in Ilorin, Kwara State. Contact us for car prices and availability.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="logo">GB<br>AUTOS</span>
+        <span class="brand-name">
+          GB Autos
+          <small>Clean Cars Only.</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#inventory">Browse Cars</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-red"
+         href="https://wa.me/2348133357093"
+         target="_blank" rel="noopener">
+        WhatsApp Us
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">PREMIUM CARS • TRUSTED SERVICE</span>
+
+          <h1>Find Your Next <span>Perfect Drive.</span></h1>
+
+          <p>
+            Looking for your next car?
+            Explore our collection of vehicles and contact GB Autos
+            for current prices, availability and viewing arrangements.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#inventory" class="btn btn-red">
+              Explore Our Cars →
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              Contact Us
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <span>✓ Quality-focused selection</span>
+            <span>✓ Direct customer support</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            id="heroImage"
+            src="images/Lexus-RX350-1.png"
+            alt="Lexus RX350 at GB Autos">
+          <span class="hero-stamp">GB AUTOS<br>YOUR NEXT DRIVE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <span class="trust-icon">🛡</span>
+          <div>
+            <strong>Quality-Focused Cars</strong>
+            <small>Explore our vehicle selection</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">🤝</span>
+          <div>
+            <strong>Helpful Service</strong>
+            <small>Talk to us directly</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">📍</span>
+          <div>
+            <strong>Based in Ilorin</strong>
+            <small>Kwara State, Nigeria</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAR INVENTORY -->
+    <section class="section inventory-section" id="inventory">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Find Your Dream Car</h2>
+          <p>
+            Browse our vehicles. Select View Car to explore more photos,
+            including interior pictures where available.
+          </p>
+        </div>
+
+        <div class="inventory-tools">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search car model..."
+            aria-label="Search car model">
+
+          <select id="modelFilter" aria-label="Filter by car model">
+            <option value="">All Models</option>
+            <option value="Toyota Highlander">Toyota Highlander</option>
+            <option value="Toyota RAV4">Toyota RAV4</option>
+            <option value="Lexus RX350">Lexus RX350</option>
+            <option value="Toyota Camry">Toyota Camry</option>
+            <option value="Honda Accord">Honda Accord</option>
+            <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
+          </select>
+
+          <select id="sortFilter" aria-label="Sort vehicles">
+            <option value="featured">Featured</option>
+            <option value="name">Name A–Z</option>
+          </select>
+
+          <button class="btn btn-red" id="searchButton">
+            Search
+          </button>
+        </div>
+
+        <!-- JavaScript will display your six cars here -->
+        <div class="car-grid" id="carGrid"></div>
+
+        <p class="empty-state" id="emptyState" hidden>
+          No matching cars found. Try another search.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- WHY TRUST US -->
+    <section class="section why-section" id="why-us">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">THE GB AUTOS DIFFERENCE</span>
+          <h2>Why Trust GB Autos?</h2>
+          <p>We want you to make an informed decision when choosing your next vehicle.</p>
+        </div>
+
+        <div class="why-grid">
+
+          <article class="why-card">
+            <span class="why-icon">🚘</span>
+            <h3>Quality-Focused Selection</h3>
+            <p>Explore our available vehicles and ask us about their condition before buying.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon">🤝</span>
+            <h3>Clear Communication</h3>
+            <p>Contact us directly to discuss vehicle details, pricing and availability.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon">📸</span>
+            <h3>More Car Photos</h3>
+            <p>View available vehicle photos, including interior images where provided.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon">📱</span>
+            <h3>Easy Enquiries</h3>
+            <p>Call or message us on WhatsApp to ask about your preferred vehicle.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon">📍</span>
+            <h3>Local Dealership</h3>
+            <p>We're based in Ilorin, Kwara State. Contact us to arrange a viewing.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon">💬</span>
+            <h3>Customer Support</h3>
+            <p>Tell us what you're looking for and we'll discuss the available options.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <div class="about-brand">
+            <span>GB</span> AUTOS
+            <small>CLEAN CARS ONLY.</small>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="eyebrow">ABOUT OUR DEALERSHIP</span>
+          <h2>Your Next Car Starts Here.</h2>
+
+          <p>
+            Welcome to GB Autos. We buy and sell cars, giving customers
+            a convenient way to explore vehicles and enquire directly.
+          </p>
+
+          <p>
+            Browse our collection, check the available photos and contact
+            us for current prices, vehicle details and viewing arrangements.
+          </p>
+
+          <ul class="check-list">
+            <li>Explore our vehicle collection</li>
+            <li>Ask about vehicle condition</li>
+            <li>Get in touch directly</li>
+          </ul>
+
+          <a href="#inventory" class="btn btn-red">
+            Browse Available Cars →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-content">
+          <span class="eyebrow">LET'S TALK CARS</span>
+          <h2>Ready for Your Next Drive?</h2>
+
+          <p>
+            Found a car you like? Contact GB Autos for the latest price,
+            availability and information about arranging a viewing.
+          </p>
+
+          <div class="contact-detail">
+            <span class="contact-icon">☎</span>
+            <div>
+              <small>Call Us</small>
+              <strong>08133357093</strong>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon">📍</span>
+            <div>
+              <small>Our Location</small>
+              <strong>Ilorin, Kwara State, Nigeria</strong>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-red" href="tel:+2348133357093">
+              Call Now
+            </a>
+
+            <a class="btn btn-green"
+               href="https://wa.me/2348133357093"
+               target="_blank" rel="noopener">
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <span class="contact-panel-icon">🚘</span>
+          <h3>Looking for something specific?</h3>
+          <p>
+            Tell us which car interests you and ask about its current
+            price and availability.
+          </p>
+
+          <a class="btn btn-red"
+             href="https://wa.me/2348133357093?text=Hello%20GB%20Autos%2C%20I%20would%20like%20to%20enquire%20about%20your%20cars."
+             target="_blank" rel="noopener">
+            Make an Enquiry →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="logo">GB<br>AUTOS</span>
+            <span class="brand-name">
+              GB Autos
+              <small>Clean Cars Only.</small>
+            </span>
+          </a>
+          <p>Your next drive starts with GB Autos.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#inventory">Browse Cars</a>
+          <a href="#why-us">Why Choose Us</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Details</h3>
+          <p>Phone: 08133357093</p>
+          <p>Ilorin, Kwara State, Nigeria</p>
+          <a href="https://wa.me/2348133357093"
+             target="_blank" rel="noopener">
+            WhatsApp GB Autos ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> GB Autos. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a class="floating-whatsapp"
+     href="https://wa.me/2348133357093"
+     target="_blank" rel="noopener"
+     aria-label="Chat with GB Autos on WhatsApp">☏</a>
+
+  <button class="back-to-top" id="backTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- CAR DETAILS AND PHOTO GALLERY -->
+  <div class="modal" id="carModal" role="dialog" aria-modal="true"
+       aria-labelledby="modalTitle" aria-hidden="true">
+
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal"
+              aria-label="Close car details">×</button>
+
+      <span class="eyebrow">GB AUTOS • VEHICLE DETAILS</span>
+      <h2 id="modalTitle">Vehicle Details</h2>
+      <p class="modal-price" id="modalPrice">Contact for price</p>
+      <p class="modal-description" id="modalDescription"></p>
+
+      <div class="gallery-main">
+        <img id="galleryMain" src="" alt="Selected car photo">
+      </div>
+
+      <div class="gallery-thumbs" id="galleryThumbs"></div>
+
+      <p class="gallery-note">
+        Select a photo to view it. Interior images will appear when included
+        among the photos for that vehicle.
+      </p>
+
+      <div class="modal-actions">
+        <a class="btn btn-red" id="modalWhatsApp"
+           href="https://wa.me/2348133357093"
+           target="_blank" rel="noopener">
+          Ask About This Car →
+        </a>
+
+        <a class="btn btn-outline" href="tel:+2348133357093">
+          Call Dealer
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load the website functionality -->
+  <script src="script.js"></script>
+
+</body>
+</html>
